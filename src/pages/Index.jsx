@@ -1,10 +1,11 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
 const Index = () => {
   return (
     <div className="text-center">
-      <h1 className="text-3xl">Your Blank Canvas</h1>
-      <p>Chat with the agent to start making edits.</p>
+      <h1 className="text-3xl font-bold">Welcome to EventMaster</h1>
+      <p className="text-xl mt-2">Manage your events efficiently</p>
+      <div className="mt-4">
+        <p>EventMaster is your go-to platform for managing events, attendees, and settings with ease.</p>
+      </div>
     </div>
   );
 };
