@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, Package2 } from "lucide-react";
+import { Calendar, CircleUser, Menu, Package2 } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
@@ -48,6 +48,10 @@ const Sidebar = () => (
               {item.title}
             </SidebarNavLink>
           ))}
+        <SidebarNavLink to="/create-event">
+            <Calendar className="h-4 w-4" />
+            Create Event
+          </SidebarNavLink>
         </nav>
       </div>
     </div>
