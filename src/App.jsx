@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar"; // Use the sidebar layout
 import Index from "./pages/Index.jsx";
 import Events from "./pages/Events.jsx";
+import CreateEvent from "./pages/CreateEvent.jsx";
 import Attendees from "./pages/Attendees.jsx";
 import SettingsPage from "./pages/Settings.jsx";
 const queryClient = new QueryClient();
@@ -19,6 +20,11 @@ export const navItems = [
   {
     title: "Events",
     to: "/events",
+    icon: <Calendar className="h-4 w-4" />,
+  },
+  {
+    title: "Create Event",
+    to: "/create-event",
     icon: <Calendar className="h-4 w-4" />,
   },
   {
@@ -43,6 +49,7 @@ const App = () => {
             <Route path="/" element={<Layout />}>
               <Route index element={<Index />} />
               <Route path="events" element={<Events />} />
+              <Route path="create-event" element={<CreateEvent />} />
               <Route path="attendees" element={<Attendees />} />
               <Route path="settings" element={<SettingsPage />} />
             </Route>
